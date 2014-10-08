@@ -1,0 +1,97 @@
+#navBar{
+	padding-top: 1px;
+	padding-left:30px;
+	width: auto;
+}
+#logo{
+	width: 100px;
+	height: 40px;
+}
+#linklogo{
+	margin:0;
+	padding:0;
+	border:0;
+}
+.Cuerpo a{
+	overflow: hidden;
+	display:block;
+}
+.Cuerpo a:hover{
+	background-color: gray;
+	border-radius:10px;
+}
+.Cuerpo span{
+	width:160px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.icono{
+	float:left;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	width:180px;
+	height:230px;
+}
+.icono img{
+	width: 180px;
+	height: 180px;
+}
+.Cuerpo{
+	list-style: none;
+	margin: 100px 200px 50px 200px;
+	background-color: gainsboro;
+	border-radius:20px;
+	padding: 50px;
+	overflow: hidden;
+}
+.Cuerpo legend{
+	font-weight: bold;
+	color:#D54513;
+}
+.Cancel{
+	float:left;
+}
+.BotonForm{
+	float:left;
+	margin-right: 10px;
+}
+.aviso{
+	font-size:20px;
+	color:#D54513;
+	font-weight: bold;
+}
+tr,td{
+	border:solid 1px #D54513;
+	font-size: 11px;
+}
+.mensaje a:hover{
+	background-color: transparent;
+	border-radius: 0;
+}
+.ContenedorMuestra{
+	float:left;
+	width:100%;
+	margin-bottom: 30px;
+}
+.Muestra{
+	list-style: none;
+	color:#38B44A;
+	margin:0;
+	float:left;
+	margin-right: 20px;
+}
+.MuestraMensaje{
+	list-style: none;
+	margin:0;
+}
+.ElementoMensaje{
+	margin-bottom: 20px;
+}
+.Contenido{
+	font-size: 14px;
+	color:black;
+	background-color: white;
+	border: 1px dashed black;
+}
+

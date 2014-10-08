@@ -1,0 +1,59 @@
+#btnEnviar{
+	margin-left: 25%;
+	width: 50%;
+}
+
+#CONTAINERedited{
+	width: 100% !important;
+	float:left;
+}
+
+#edited{
+	width: 700px !important;	
+}
+
+#lf_newedited{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#principal{	
+	height: 400px;
+	margin: 0 ;	
+	width: 720px;
+}
+
+#principal form{
+	width: 100%;
+}
+
+#whizzyedited{	
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    margin: 5px 1px;    
+    /*transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;*/
+    height: 350px;
+    width: 720px;
+}
+
+body.#barra{
+	margin-bottom: 10px;
+	position: relative;	
+}
+
+input[type="button"]{
+	width: 75px !important;
+	font-family: Arial !important;
+	color: #333333 !important;
+	font-size: 10px !important;
+}
+
+h1{
+	margin-top: 45px !important;
+}
+
+[title="Fullscreen"],[title="Clean"]{	
+	display: none;
+}

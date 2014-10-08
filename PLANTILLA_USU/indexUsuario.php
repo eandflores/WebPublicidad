@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<?PHP
+    session_start();
+    if( !(isset($_SESSION['user'])) || $_SESSION['cargo'] == 'ADMINISTRADOR'){       
+        header("Location: ../index-proyecto/index.php"); // Este if cerciora que el que ingresa no sea administrador
+    }
+    include "funciones.php"; 
+?>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <title>Biemvenido a SPAM</title>
+        <link href="Bootswatch%20%20United_files/bootstrap.css" rel="stylesheet">
+        <link href="Bootswatch%20%20United_files/bootstrap-responsive.css" rel="stylesheet">
+        <link href="Bootswatch%20%20United_files/bootswatch.css" rel="stylesheet">
+        <link rel="shortcut icon" href="imagenes/logo.jpg">
+    </head>
+    <body class="preview" data-spy="scroll" data-target=".subnav" data-offset="80">
+  
+        <!--=======================================CABEZA================================-->
+        <?PHP cabesera() ?> <!--Esta funcion depliega la barra superior de la pagina -->
+        <!--=======================================CUERPO================================-->
+
+        <div class="container">
+            <center>
+                <section id="typography">
+                <!-- Headings & Paragraph Copy -->
+                    <div class="row">
+                        <div class="well"> <!--Este contenedor nos muestra un resumen de las opciones que puede tener el usuario dentro de la pagina-->
+                            <a class="btn btn-large" data-original-title="REDACTAR CORREO" rel="tooltip"  href="redactarCorreo.php" onclick="_gaq.push(['_trackEvent', 'click', 'outbound', 'builtwithbootstrap']);"><img src="Imagenes/REDACTAR.png"></a>
+                            <a class="btn btn-large" data-original-title="CORREOS GUARDADOS" rel="tooltip" href="correosGuardados.php" onclick="_gaq.push(['_trackEvent', 'click', 'outbound', 'builtwithbootstrap']);"><img src="Imagenes/GUARDAR.png" id="logo"></a>
+                            <a class="btn btn-large" data-original-title="CORREOS ENVIADOS" rel="tooltip" href="correosEnviados.php" onclick="_gaq.push(['_trackEvent', 'click', 'outbound', 'builtwithbootstrap']);"><img src="Imagenes/ENVIAR.png" id="logo"></a>
+                            <a class="btn btn-large" data-original-title="BORRAR CORREOS" rel="tooltip" href="borrarCorreos.php" onclick="_gaq.push(['_trackEvent', 'click', 'outbound', 'builtwithbootstrap']);"><img src="Imagenes/BORRADOS.png" id="logo"></a>
+                            <a class="btn btn-large" data-original-title="APORTAR DIRECCIÓN(ES)" rel="tooltip" href="aportar.php" onclick="_gaq.push(['_trackEvent', 'click', 'outbound', 'builtwithbootstrap']);"><img src="Imagenes/CORREOS.png" id="logo"></a>
+                            <a class="btn btn-large" data-original-title="INFORMACIÓN CUENTA" rel="tooltip" href="verCuenta.php" onclick="_gaq.push(['_trackEvent', 'click', 'outbound', 'builtwithbootstrap']);"><img src="Imagenes/CUENTA.png" id="logo"></a>
+                        </div> 
+                    </div>
+                </section>
+            </center>
+        </div>
+        <!--=======================================PIE================================-->
+        <?PHP pie() ?> <!--Esta funcion agrega los script utilizados en la pagina-->
+
+    </body>
+</html>
